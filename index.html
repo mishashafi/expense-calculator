@@ -8,6 +8,70 @@
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <div class="header flex">
+        <input type="number" placeholder="Enter Your Budget" id="budget-input">
+        <button class="add-budget btn">Add Budget</button>
+    </div>
+    <div class="main">
+        <h2>Your Budget Statistics</h2>
+        <div class="budget-statistics-wrapper flex">
+            <div class="budget-statistics-section budget">Budget: 0.00</div>
+            <div class="budget-statistics-section remaining">Remaining: 0.00</div>
+            <div class="budget-statistics-section spent">Spent: 0.00</div>
+        </div>
+    </div>
+    <div class="details flex">
+        <div class="add-expense">
+            <h2>Add Expense</h2>
+            <div class="flex-column">
+                <label>Date *</label>
+                <input type="date" name="" id="date">
+            </div>
+            <div class="flex-column">
+                <label>Amount *</label>
+                <input type="number" name="" id="amount">
+            </div>
+            <div class="flex-column">
+                <label>Category</label>
+                <select name="Category" id="category-select">
+                    <option value="">Select a category</option>
+                    <option value="grocery">Grocery</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="utility-bills">Utility Bills</option>
+                    <option value="transport">Transport</option>
+                    <option value="internet-mobile">Internet and Mobile</option>
+                </select>
+            </div>
+            <div class="flex-column">
+                <label>Description</label>
+                <input type="text" id="description">
+                <button class="add-expense btn">Add Expense</button>
+            </div>
+        </div>
+        <div class="expenses">
+            <h2>Expenses</h2>
+            <ul class="budget-expense-list flex">
+                <li class="expense-list-item flex">
+                    <div class="expense-list-item-selected-category"></div>
+                    <div class="expense-list-item-date"></div>
+                    <div class="expense-list-item-amount"></div>
+                    <div class="expense-list-item-description"></div>
+                    <div class="expense-list-item-button flex">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </li>
+            </ul>
+            <!-- <p>You don't hove any expense.</p> -->
+        </div>
+        <div class="add-category">
+            <h2>Add Category</h2>
+            <div class="flex-column">
+                <label>New Category</label>
+                <input type="text" id="new-category">
+                <button class="add-category btn">Add Category</button>
+            </div>
+        </div>
+    </div>
 </body>
-</html>
+</html> 
