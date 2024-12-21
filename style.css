@@ -116,7 +116,7 @@
 }
 .expense-list-item-selected-category{
     background-color: #eeeeee;
-    border: none;
+    border: 2px solid black;
     width: 115px;
     text-align: center;
     font-size: 15px;
@@ -124,7 +124,7 @@
 }
 .expense-list-item-date{
     background-color: #eeeeee;
-    border: none;
+    border: 2px solid black;
     width: 115px;
     text-align: center;
     font-size: 15px;
@@ -132,7 +132,7 @@
 }
 .expense-list-item-amount{
     background-color: #eeeeee;
-    border: none;
+    border: 2px solid black;
     width: 60px;
     text-align: center;
     font-size: 15px;
@@ -140,9 +140,8 @@
 }
 .expense-list-item-description{
     background-color: #eeeeee;
-    border: none;
+    border: 2px solid black;
     width: 115px;
-    text-align: center;
     font-size: 15px;
     padding: 5px;
 }
@@ -167,3 +166,6 @@
     border-radius: 5px;
     padding: 10px;
 } 
+ul p{
+    font-size: 20px;
+}
